@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">
+            Translator
+        </h1>
+    </header>
+    <section>
+        <div class="language-selection">
+            <select></select>
+            <div class="icon-div">
+                <img src="icons/ph_swap-light.png" alt="swap-icon" id="swap-icon">
+            </div>
+            <select></select>
+        </div>
+        <div class="translation-div">
+            <div class="form-input">
+                <textarea class="text-input" cols="30" rows="10" placeholder="Type here" required></textarea>
+                <div class="control">
+                    <div class="icons-div icon-control from">
+                        <div class="icon-div copy">
+                            <img src="icons/sound.png" alt="sound-icon" id="fromSound" class="sound">
+                        </div>
+                        <div class="icon-div">
+                            <img src="icons/copy.png" alt="copy-icon" id="fromCopy" class="copy">
+                        </div>
+                    </div>
+                    <button type="submit" class="button-translate">Translate</button>
+                </div>
+            </div>
+            <div class="form-result">
+                <textarea class="text-result" readonly disabled cols="30" rows="10" placeholder="Translation"></textarea>
+                <div>
+                    <div class="icons-div icon-control to">
+                        <div class="icon-div copy">
+                            <img src="icons/sound.png" alt="sound-icon" id="toSound" class="sound">
+                        </div>
+                        <div class="icon-div sound">
+                            <img src="icons/copy.png" alt="copy-icon" id="toCopy" class="copy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js" defer></script>
+    <script src="js/countriesList.js"></script>
+</body>
+</html>
